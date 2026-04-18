@@ -1,15 +1,23 @@
 {
   "name": "claud-code-account-switcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage multiple Claude Code accounts with a simple CLI",
   "bin": {
-    "_cca": "./bin/_cca.js",
-    "claude-switcher": "./bin/claude-switcher.js"
+    "_cca": "bin/_cca.js",
+    "claude-switcher": "bin/claude-switcher.js"
   },
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@inquirer/prompts": "^7.0.0"
   },
-  "keywords": ["claude", "claude-code", "anthropic", "account", "multi-account"],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "anthropic",
+    "account",
+    "multi-account"
+  ],
   "license": "MIT"
 }

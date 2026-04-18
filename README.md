@@ -193,7 +193,12 @@ Run `claude who` to check, then `claude use <name>` or just `claude <name>` to s
 
 ## Changelog
 
-### v2.0.0 — Current
+### v2.1.0 — Current
+- **Works on Windows and WSL now.** The setup wizard, account switcher, and shell integration all work natively on Windows (PowerShell) and Windows Subsystem for Linux — not just macOS and Linux.
+- **PowerShell users get full support.** On Windows, setup injects the `claude()` function into your PowerShell profile automatically — the same seamless experience bash and zsh users already had.
+- **Reload hints are always right.** After setup or adding an account, the command shown to reload your shell matches your actual shell — `source ~/.zshrc`, `source ~/.bashrc`, or `. $PROFILE` depending on what you're running.
+
+### v2.0.0
 - **Every account now starts with a clean slate.** When you create a new account, your conversation history and sessions stay where they belong — in the account they came from. No more cross-account bleed.
 - **Want a fresh start on an existing account?** Run `claude-switcher clear-history` and pick the account. Everything is wiped cleanly with a confirmation step so you never do it by accident.
 - **Carrying history over is still possible.** If you *want* to bring your history into a new account when setting it up, the setup wizard will ask — just say yes.

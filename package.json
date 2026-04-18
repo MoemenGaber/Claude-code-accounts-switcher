@@ -1,6 +1,6 @@
 {
   "name": "claud-code-account-switcher",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Manage multiple Claude Code accounts with a simple CLI",
   "bin": {
     "_cca": "bin/_cca.js",

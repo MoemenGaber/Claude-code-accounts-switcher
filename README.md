@@ -127,6 +127,7 @@ claude personal
 | `claude list` | List all accounts — active one marked with `*` |
 | `claude use <name>` | Switch the active account (shows confirmation) |
 | `claude-switcher add <name>` | Add a new account without re-running setup |
+| `claude-switcher clear-history [name]` | Delete sessions and history for an account (interactive if no name given) |
 | `claude-switcher setup` | Re-run the full setup wizard |
 
 ---
@@ -187,6 +188,21 @@ Run `source ~/.zshrc` to reload the shell function and regenerate aliases.
 
 **Wrong account is active**
 Run `claude who` to check, then `claude use <name>` or just `claude <name>` to switch.
+
+---
+
+## Changelog
+
+### v2.0.0 — Current
+- **Every account now starts with a clean slate.** When you create a new account, your conversation history and sessions stay where they belong — in the account they came from. No more cross-account bleed.
+- **Want a fresh start on an existing account?** Run `claude-switcher clear-history` and pick the account. Everything is wiped cleanly with a confirmation step so you never do it by accident.
+- **Carrying history over is still possible.** If you *want* to bring your history into a new account when setting it up, the setup wizard will ask — just say yes.
+
+### v1.2.3
+- **Switch accounts in one word.** Type `claude work` or `claude personal` and you're in — no config files, no env vars, no friction.
+- **Setup finds your accounts automatically.** If you already had multiple Claude config folders, the wizard detects them and offers to use them right away.
+- **Your settings travel with you.** When creating a new account, you can copy your existing settings, plugins, and commands so you don't have to set everything up from scratch.
+- **Shortcuts out of the box.** After setup, `claudework` and `claudepersonal` (and any other account name) work as standalone commands — no extra config needed.
 
 ---
 

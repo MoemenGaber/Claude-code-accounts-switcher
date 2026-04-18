@@ -40,6 +40,13 @@ switch (cmd) {
     process.stdout.write(require('../lib/shell').buildShellBlock());
     break;
 
+  case 'clear-history': {
+    const name = rest[0];
+    require('../lib/clear').clearHistory(name)
+      .catch(err => { console.error(err.message); process.exit(1); });
+    break;
+  }
+
   default:
     require('../lib/run').runClaude([cmd, ...rest].filter(Boolean));
     break;

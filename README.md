@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MoemenGaber/Claude-code-accounts-switcher/main/assets/logo.png" alt="Claude Switcher Logo" width="180" />
-
 ```
  ██████╗██╗      █████╗ ██╗   ██╗██████╗ ███████╗
 ██╔════╝██║     ██╔══██╗██║   ██║██╔══██╗██╔════╝
@@ -12,6 +10,8 @@
 
      ACCOUNT SWITCHER
 ```
+
+<img src="https://raw.githubusercontent.com/MoemenGaber/Claude-code-accounts-switcher/main/assets/logo.png" alt="Claude Switcher Logo" width="400" />
 
 **Switch between multiple Claude Code accounts — seamlessly.**
 

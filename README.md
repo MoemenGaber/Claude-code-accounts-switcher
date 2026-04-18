@@ -38,7 +38,7 @@ npm install -g claud-code-account-switcher
 Run the one-time setup wizard:
 
 ```sh
-claude setup
+claude-switcher setup
 ```
 
 The wizard will:
@@ -81,13 +81,13 @@ claude who           # show active account and config dir
 claude /who          # same
 claude list          # list all accounts (* marks active)
 claude use work      # switch active account (shows confirmation prompt)
-claude add staging   # add a new account without re-running setup
-claude setup         # re-run the full setup wizard
+claude-switcher add staging   # add a new account
+claude-switcher setup         # re-run the full setup wizard
 ```
 
 ### Dynamic aliases
 
-Aliases like `claudework` and `claudepersonal` are generated automatically at shell startup by reading `~/.claude-accounts.conf`. Adding a new account via `claude add <name>` makes `claude<name>` available after the next `source ~/.zshrc` — no manual profile edits needed.
+Aliases like `claudework` and `claudepersonal` are generated automatically at shell startup by reading `~/.claude-accounts.conf`. Adding a new account via `claude-switcher add <name>` makes `claude<name>` available after the next `source ~/.zshrc` — no manual profile edits needed.
 
 ---
 
@@ -104,7 +104,7 @@ Aliases like `claudework` and `claudepersonal` are generated automatically at sh
 ## Example: Setting Up Two Accounts
 
 ```sh
-$ claude setup
+$ claude-switcher setup
 
 === Claude Code Account Switcher — Setup ===
 
